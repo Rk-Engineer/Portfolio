@@ -1,13 +1,14 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
+import emailjs from "@emailjs/browser"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Github, Linkedin, Send } from "lucide-react"
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -18,30 +19,29 @@ export default function Contact() {
   })
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    const response = await fetch("https://formspree.io/f/xanjopqy", {
-      method: "POST",
-      headers: {
-      Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-      }),
-    });
+    try {
+      const result = await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,         // Service ID
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,     // Template ID
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!     // Public Key
+      )
 
-    if (response.ok) {
-      alert("Thank you! Your message has been sent.");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    } else {
-      alert("Oops! There was a problem submitting your form.");
+      console.log(result.text)
+      alert("Thank you! Your message has been sent.")
+      setFormData({ name: "", email: "", subject: "", message: "" })
+    } catch (error) {
+      console.error(error)
+      alert("Oops! There was a problem submitting your form.")
     }
-  };
-
+  }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -130,7 +130,7 @@ export default function Contact() {
               </CardHeader>
               <CardContent>
                 <a href="./resume.pdf" download="RamKumar_Resume.pdf">
-                <Button className="w-full">Download Resume (PDF)</Button>
+                  <Button className="w-full">Download Resume (PDF)</Button>
                 </a>
               </CardContent>
             </Card>
