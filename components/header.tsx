@@ -1,5 +1,4 @@
 "use client"
-
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Moon, Sun, Menu, X } from "lucide-react"
@@ -34,11 +33,11 @@ export default function Header() {
   if (!mounted) return null
 
   return (
-    <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b z-50">
-      <div className="container mx-auto px-4 py-4">
+    <header className="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[1200px] bg-background/80 backdrop-blur-md border-b z-50 px-4">
+      <div className="py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-primary">Ramkumar.B</div>
-
+          
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
@@ -56,7 +55,7 @@ export default function Header() {
             <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
               {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
-
+            
             {/* Mobile Menu Button */}
             <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
               {isMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}

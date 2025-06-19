@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Ram Kumar - Software Developer Portfolio",
     description: "Aspiring Software Developer passionate about building innovative software solutions",
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -38,7 +38,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          {children}
+          <div className="mx-auto max-w-[1200px] px-4">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
