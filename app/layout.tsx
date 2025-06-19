@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
+import Header from "@/components/header"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -38,7 +39,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="mx-auto max-w-[1200px] px-4">
+          {/* Header outside the constrained container */}
+          <Header />
+          {/* Main content with max-width constraint */}
+          <div className="mx-auto max-w-[1600px] px-4">
             {children}
           </div>
         </ThemeProvider>
