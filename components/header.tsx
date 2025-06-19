@@ -37,7 +37,7 @@ export default function Header() {
     <header className="fixed top-0 w-full bg-background/80 backdrop-blur-md border-b z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary">Ram Kumar</div>
+          <div className="text-2xl font-bold text-primary">Ramkumar.B</div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">

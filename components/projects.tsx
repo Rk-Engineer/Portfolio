@@ -6,6 +6,13 @@ import { Github, ExternalLink, Clock } from "lucide-react"
 export default function Projects() {
   const projects = [
     {
+      title: "Student Management System",
+      description: "A full backend system to manage student data, courses, and grades.",
+      technologies: ["Java", "Spring Boot", "H2 Database"],
+      github: "https://github.com/Rk-Engineer/Student-Management-System",
+      status: "completed",
+    },
+    {
       title: "Personal AI ChatBot",
       description:
         "Built a personal AI chatbot using Streamlit and Google APIs to answer personal questions and automate daily queries.",
@@ -17,20 +24,36 @@ export default function Projects() {
       title: "Age Detection Project",
       description: "A real-time age detection and gender Detection system built with Java and OpenCV using live camera inputs and Algorithms.",
       technologies: ["Java", "OpenCV", "Maven"],
-      github: "https://github.com/Rk-Engineer/Personal-AI-ChatBot",
+      github: "https://github.com/Rk-Engineer/AgeDetection",
       status: "completed",
     },
     {
-      title: "Student Management System",
-      description: "A full backend system to manage student data, courses, and grades.",
-      technologies: ["Java", "Spring Boot", "H2 Database"],
-      status: "completed",
-    },
-    {
-      title: "Patch Intelligence",
+      title: "Patch Intelligence System",
       description: "An intelligent patch management system that automates software patch updates.",
       technologies: ["Python", "Neo4j" , "CQL", "NVD APIs" ,"BeautifulSoup"],
+      github: "https://github.com/Rk-Engineer/securin_patch_intelligence",
       status: "completed",
+    },
+    {
+    title: "Expense Tracker",
+    description: "A simple and effective expense tracking application developed using Python. It stores user expenses in a database and allows easy input, tracking, and viewing of daily and monthly transactions.",
+    technologies: ["Python", "SQLite"], // Or MySQL/PostgreSQL if you used a different DB
+    github: "https://github.com/Rk-Engineer/ExpenseTracker", // update if repo name differs
+    status: "completed",
+    },
+    {
+      title: "YouTube Clone Landing Page",
+      description: "Developed a landing page similar to YouTube during internship training at HCL Technologies.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/Rk-Engineer/YouTube-clone",
+      status: "completed",
+    },
+    {
+    title: "AI Interview Trainer",
+    description: "A full-stack project that simulates real-time AI interviews with resume upload, mock interview, ATS score, camera integration, and feedback. Built using React, MongoDB, and Node.js.",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "OpenAI", "Tailwind CSS"],
+    github: "https://github.com/Rk-Engineer/AI-Powered-Resume-Analyser", // replace if your repo name is different
+    status: "in-progress",  
     },
     {
       title: "Smart Clipboard AI Assistant",
@@ -39,12 +62,7 @@ export default function Projects() {
       technologies: ["HTML" ,"CSS" ,"Javascript" ,"Open AI API's"],
       status: "in-progress",
     },
-    {
-      title: "YouTube Clone Landing Page",
-      description: "Developed a landing page similar to YouTube during internship training at HCL Technologies.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      status: "completed",
-    },
+    
   ]
 
   return (

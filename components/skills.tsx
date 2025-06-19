@@ -20,20 +20,20 @@ export default function Skills() {
     {
       title: "Backend Technologies",
       icon: Database,
-      skills: ["NodeJS" , "ExpressJS", "Spring Boot", "REST APIs", "Maven" ],
+      skills: ["NodeJS" , "ExpressJS", "Spring Boot", "REST APIs", "Maven" , "Fast API" ],
       color: "text-green-500",
     },
     {
       title: "Databases",
       icon: Database,
-      skills: ["MySQL", "H2" , "MongoDB" , "Neo4j"],
+      skills: ["MongoDB" ,"MySQL", "H2" ,  "Neo4j"],
       color: "text-orange-500",
     },
     
     {
       title: "Tools & Platforms",
       icon: Wrench,
-      skills: ["Git", "GitHub" , "Linux" , "VS Code" , "Firebase"],
+      skills: ["Git", "GitHub" , "Linux" , "VS Code" , "Firebase" , "Postman" , "IntelliJ"],
       color: "text-indigo-500",
     },
     {

@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
-              Ram Kumar
+              Ramkumar.B
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
               Aspiring Software Developer | MERN Stack Enthusiast | Java & Spring Boot Developer | AI & Projects
@@ -51,7 +51,8 @@ export default function Hero() {
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-primary text-primary-foreground p-3 rounded-full">
-                <Github className="h-6 w-6" />
+                <a href="https://github.com/Rk-Engineer" target="_blank" rel="noopener noreferrer"><Github  className="h-6 w-6" /></a>
+                
               </div>
             </div>
           </div>

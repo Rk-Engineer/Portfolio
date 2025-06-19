@@ -34,7 +34,7 @@ export default function About() {
                   <h4 className="text-lg font-semibold">Education</h4>
                 </div>
                 <p className="text-muted-foreground">
-                  B.E. Computer Science and Technology
+                  B.E. Computer Science and Engineering
                   <br />
                   Sathyabama Institute of Science and Technology
                   <br />
