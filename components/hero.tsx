@@ -43,7 +43,7 @@ export default function Hero() {
             <div className="relative">
               <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <Image
-                  src="/placeholder.jpg?height=320&width=320"
+                  src="https://ik.imagekit.io/RkEngineer/Portfolio/placeholder.jpg?height=320&width=320"
                   alt="Ram Kumar"
                   width={320}
                   height={320}
