@@ -33,7 +33,7 @@ export default function Skills() {
     {
       title: "Tools & Platforms",
       icon: Wrench,
-      skills: ["Git", "GitHub" , "Linux" , "VS Code" , "Firebase" , "Postman" , "IntelliJ"],
+      skills: ["Git", "GitHub" , "Linux" , "VS Code" , "Firebase" , "Postman" , "IntelliJ" , "ServiceNow"],
       color: "text-indigo-500",
     },
     {
@@ -48,7 +48,7 @@ export default function Skills() {
     { name: "Problem Solving", level: 85 },
     { name: "Team Collaboration", level: 80 },
     { name: "Communication", level: 75 },
-    { name: "Leadership", level: 70 },
+    { name: "Leadership", level: 85 },
   ]
 
   const currentLearning = ["Data Structures & Algorithms (DSA)", "Aptitude Preparation for Campus Placement"]

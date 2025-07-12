@@ -21,8 +21,7 @@ export default function Hero() {
               Ramkumar.B
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
-              Aspiring Software Developer | MERN Stack Enthusiast | Java & Spring Boot Developer | AI & Projects
-              Explorer
+              Aspiring Software Developer | MERN & JavaFull Stack Developer | AI & Projects Explorer | ServiceNow Certified 
             </h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
               Passionate about building software that solves real-world problems. Exploring AI, Fullstack Development,
